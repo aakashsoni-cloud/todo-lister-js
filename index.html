@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO List</title>
+  </head>
+  <body id="background" style="z-index: 1000">
+
+
+    <header id="main-header" class="bg-dark text-white p-4 mb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="h1-heading" id="header-title">TODO LISTER</h1>
+          </div>
+          <div class="col-md-6 align-self-center">
+           <input
+                type="text"
+                id="filter"
+                class="form-control mb-3"
+                placeholder="Search items...."
+              />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div id="main" class="card card-body">
+        <h2 class="title">Add todos</h2>
+
+        <form id="addForm" class="form-inline mb-4">
+          <div class="row">
+            <div class="col-md-6">
+              <input
+                type="text"
+                id="item"
+                class="form-control mb-3"
+                placeholder="write some text to add..."
+              />
+            </div>
+            <div class="col-md-6">
+              <input type="submit" class="btn btn-dark" value="Submit" />
+            </div>
+          </div>
+        </form>
+
+        <h2 class="title" id="title-id">Items</h2>
+        <ul class="list-group" id="items">
+          <li class="list-group-item"> Delete this using the X
+            <button class="btn btn-danger btn-sm float-end delete">X</button>
+          </li>
+        </ul>
+        <h3 id="result"></h3>
+        <br />
+        <!-- <button
+          onclick="this.innerHTML  = `<p>USE with cntrl</hp>` "
+          class="btn btn-dark btn-block"
+          id="button"
+        >
+          Click Me
+        </button> -->
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
